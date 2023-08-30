@@ -13,7 +13,7 @@
 <body>
     <header class="flex justify-between my-5 max-w-7xl mx-auto" id="">
         <div class="" id="">
-            <span class="font-bold text-2xl">Hot Gadgets</span>
+            <span class="font-bold text-2xl">Hot <span class="text-blue-600">Gadgets</span></span>
         </div>
         <div class="" id="">
             <button class="text-md font-bold bg-blue-600 px-7 py-3 text-white rounded-lg" id="">Sign Up</button>
@@ -27,7 +27,9 @@
             <p class="text-sm w-1/2 mx-auto text-[#706F6F]" id="">There are many variations of passages of Lorem Ipsum
                 available, but the majority have suffered alteration in some form, by injected humou.</p>
             <button class="text-md font-bold bg-blue-600 px-7 py-3 text-white rounded-lg" id="">Buy Now</button>
-            <img class="w-[80%] mx-auto rounded-md" id="" src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/01/09/iphone-14-Pro-and-pro-max.jpg" alt="">
+            <img class="w-[60%] mx-auto rounded-md" id=""
+                src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/01/09/iphone-14-Pro-and-pro-max.jpg"
+                alt="">
         </section>
         <!-- Search your phone-->
         <section class="mt-10" id="">
@@ -35,9 +37,11 @@
             <!-- search bar -->
             <div class="flex justify-center items-center mt-5">
                 <div class="join items-center">
-                    <input id="search-field" class="input bg-gray-200 text-[#706F6F] input-bordered join-item w-[500px] rounded-l-md"
+                    <input id="search-field"
+                        class="input bg-gray-200 text-[#706F6F] input-bordered join-item w-[500px] rounded-l-md"
                         placeholder="Search your phone" />
-                    <button class="btn h-[50px] join-item rounded-md text-md font-bold bg-blue-600 px-7 py-3 text-white "
+                    <button
+                        class="btn h-[50px] join-item rounded-md text-md font-bold bg-blue-600 px-7 py-3 text-white "
                         id="search-btn" onclick="searching()">Search</button>
                 </div>
             </div>
@@ -55,11 +59,23 @@
             <div class="grid grid-cols-4 gap-5 mt-14" id="phone-container">
             </div>
             <div class="hidden my-10" id="show-all">
-                <button class="text-md font-bold bg-blue-600 px-7 py-3 text-white rounded-lg" id="show-all-btn" onclick="showAll()">Show All</button>
+                <button class="text-md font-bold bg-blue-600 px-7 py-3 text-white rounded-lg" id="show-all-btn"
+                    onclick="showAll()">Show All</button>
             </div>
         </section>
+        <!-- modal -->
+       
+
+            <dialog id="phone_details" class="modal p-5">
+                <form method="dialog" class="modal-box" id="modal-form">
+
+                </form>
+            </dialog>
 
     </main>
+    <footer class="" id="">
+
+    </footer>
     <!-- script -->
     <script src="./app.js"></script>
 </body>
