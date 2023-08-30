@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="flex justify-between my-5 max-w-7xl mx-auto" id="">
+        <div class="" id="">
+            <span class="font-bold text-2xl">Hot Gadgets</span>
+        </div>
+        <div class="" id="">
+            <button class="text-md font-bold bg-blue-600 px-7 py-3 text-white rounded-lg" id="">Sign Up</button>
+        </div>
+    </header>
+    <!-- main -->
+    <main class=" max-w-7xl mx-auto my-10" id="">
+        <!-- hero section -->
+        <section class="text-center space-y-7 mt-14" id="">
+            <h1 class="text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
+            <p class="text-sm w-1/2 mx-auto text-[#706F6F]" id="">There are many variations of passages of Lorem Ipsum
+                available, but the majority have suffered alteration in some form, by injected humou.</p>
+            <button class="text-md font-bold bg-blue-600 px-7 py-3 text-white rounded-lg" id="">Buy Now</button>
+            <img class="w-[80%] mx-auto rounded-md" id="" src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/01/09/iphone-14-Pro-and-pro-max.jpg" alt="">
+        </section>
+        <!-- Search your phone-->
+        <section class="mt-10" id="">
+            <h3 class="text-center text-2xl font-bold" id="">....... Search your phone .......</h3>
+            <!-- search bar -->
+            <div class="flex justify-center items-center mt-5">
+                <div class="join items-center">
+                    <input id="search-field" class="input bg-gray-200 text-[#706F6F] input-bordered join-item w-[500px] rounded-l-md"
+                        placeholder="Search your phone" />
+                    <button class="btn h-[50px] join-item rounded-md text-md font-bold bg-blue-600 px-7 py-3 text-white "
+                        id="search-btn" onclick="searching()">Search</button>
+                </div>
+            </div>
+        </section>
+        <section class="" id="">
+            <!-- loading -->
+            <div class="text-center my-32 hidden" id="loading">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+            <!-- error message -->
+            <div class="text-center my-32 hidden text-xl" id="error">
+                <h1 class="" id="">match not found!!</h1>
+            </div>
+            <!-- phone-container -->
+            <div class="grid grid-cols-4 gap-5 mt-14" id="phone-container">
+            </div>
+            <div class="hidden my-10" id="show-all">
+                <button class="text-md font-bold bg-blue-600 px-7 py-3 text-white rounded-lg" id="show-all-btn" onclick="showAll()">Show All</button>
+            </div>
+        </section>
+
+    </main>
+    <!-- script -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
