@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="flex justify-between my-5 max-w-7xl mx-auto" id="">
+    <header class="mx-10 flex justify-between my-5 max-w-7xl lg:mx-auto" id="">
         <div class="" id="">
             <span class="font-bold text-2xl">Hot <span class="text-blue-600">Gadgets</span></span>
         </div>
@@ -23,11 +23,11 @@
     <main class=" max-w-7xl mx-auto my-10" id="">
         <!-- hero section -->
         <section class="text-center space-y-7 mt-14" id="">
-            <h1 class="text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
+            <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold">Apple Iphone 14 Pro Max</h1>
             <p class="text-sm w-1/2 mx-auto text-[#706F6F]" id="">There are many variations of passages of Lorem Ipsum
                 available, but the majority have suffered alteration in some form, by injected humou.</p>
             <button class="text-md font-bold bg-blue-600 px-7 py-3 text-white rounded-lg" id="">Buy Now</button>
-            <img class="w-[60%] mx-auto rounded-md" id=""
+            <img class="w-[80%] lg:w-[60%] mx-auto rounded-md" id=""
                 src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/01/09/iphone-14-Pro-and-pro-max.jpg"
                 alt="">
         </section>
@@ -38,10 +38,10 @@
             <div class="flex justify-center items-center mt-5">
                 <div class="join items-center">
                     <input id="search-field"
-                        class="input bg-gray-200 text-[#706F6F] input-bordered join-item w-[500px] rounded-l-md"
+                        class="input bg-gray-200 text-[#706F6F] join-item md:w-[400px] lg:w-[600px] lg:h-[62px] "
                         placeholder="Search your phone" />
                     <button
-                        class="btn h-[50px] join-item rounded-md text-md font-bold bg-blue-600 px-7 py-3 text-white "
+                        class="btn h-[50px] join-item rounded-md text-md font-bold bg-blue-600 px-7 py-3 lg:btn-lg text-white hover:bg-blue-600 "
                         id="search-btn" onclick="searching()">Search</button>
                 </div>
             </div>
@@ -56,16 +56,14 @@
                 <h1 class="" id="">match not found!!</h1>
             </div>
             <!-- phone-container -->
-            <div class="grid grid-cols-4 gap-5 mt-14" id="phone-container">
+            <div class="grid  md:grid-cols-2 mx-10 lg:grid-cols-4 gap-5 mt-14" id="phone-container">
             </div>
-            <div class="hidden my-10" id="show-all">
+            <div class="hidden my-10 mx-10" id="show-all">
                 <button class="text-md font-bold bg-blue-600 px-7 py-3 text-white rounded-lg" id="show-all-btn"
                     onclick="showAll()">Show All</button>
             </div>
         </section>
         <!-- modal -->
-       
-
             <dialog id="phone_details" class="modal p-5">
                 <form method="dialog" class="modal-box" id="modal-form">
 

@@ -28,6 +28,12 @@ const showPhone = (phones, isShowAll) => {
         const Error = document.getElementById('error');
         Error.classList.remove('hidden');
     }
+    else{
+        const Error = document.getElementById('error');
+
+        Error.classList.add('hidden');
+
+    }
 
     phones.forEach(phone => {
         const phoneCard = document.createElement("div");
